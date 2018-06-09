@@ -1,0 +1,476 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2C29E86920C399E900B2D0D7 /* SYGLProducer.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C29E86820C399E900B2D0D7 /* SYGLProducer.m */; };
+		2C77D4C520C9291D0039ECDB /* SYGLView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C77D4C420C9291D0039ECDB /* SYGLView.m */; };
+		2C7EC58E20C546B700EAB27F /* SYGLFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C7EC58D20C546B700EAB27F /* SYGLFilter.m */; };
+		2C90CEFC20A5F3EE008AD04C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C90CEFB20A5F3EE008AD04C /* AppDelegate.m */; };
+		2C90CEFF20A5F3EE008AD04C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C90CEFE20A5F3EE008AD04C /* ViewController.m */; };
+		2C90CF0220A5F3EE008AD04C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C90CF0020A5F3EE008AD04C /* Main.storyboard */; };
+		2C90CF0420A5F3EF008AD04C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C90CF0320A5F3EF008AD04C /* Assets.xcassets */; };
+		2C90CF0720A5F3EF008AD04C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C90CF0520A5F3EF008AD04C /* LaunchScreen.storyboard */; };
+		2C90CF0A20A5F3EF008AD04C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C90CF0920A5F3EF008AD04C /* main.m */; };
+		2C90CF1620A5F44C008AD04C /* SYGLProgram.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C90CF1420A5F44C008AD04C /* SYGLProgram.m */; };
+		2C90CF1D20A5F733008AD04C /* SYGLContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C90CF1B20A5F733008AD04C /* SYGLContext.m */; };
+		2CE07DFF20A81E7E00CAA188 /* SYGLTexture.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CE07DFE20A81E7E00CAA188 /* SYGLTexture.m */; };
+		2CE07E0220A82AF100CAA188 /* SYGLFrameBuffer.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CE07E0120A82AF100CAA188 /* SYGLFrameBuffer.m */; };
+		2CE77AB320CA63BE00EB2D4B /* backGroundImageSource.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2CE77AB220CA63BE00EB2D4B /* backGroundImageSource.jpg */; };
+		2CE77AB720CA677000EB2D4B /* SYGLImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CE77AB620CA677000EB2D4B /* SYGLImage.m */; };
+		2CE77ABF20CA6E1B00EB2D4B /* Default.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 2CE77ABD20CA6E1B00EB2D4B /* Default.fsh */; };
+		2CE77AC020CA6E1B00EB2D4B /* Default.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 2CE77ABE20CA6E1B00EB2D4B /* Default.vsh */; };
+		2CE77AC320CAA5BF00EB2D4B /* SYGLVideoCamera.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CE77AC220CAA5BF00EB2D4B /* SYGLVideoCamera.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2C29E86620C3968E00B2D0D7 /* SYGLConsumer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SYGLConsumer.h; sourceTree = "<group>"; };
+		2C29E86720C399E900B2D0D7 /* SYGLProducer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SYGLProducer.h; sourceTree = "<group>"; };
+		2C29E86820C399E900B2D0D7 /* SYGLProducer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SYGLProducer.m; sourceTree = "<group>"; };
+		2C77D4C320C9291D0039ECDB /* SYGLView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SYGLView.h; sourceTree = "<group>"; };
+		2C77D4C420C9291D0039ECDB /* SYGLView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SYGLView.m; sourceTree = "<group>"; };
+		2C7EC58C20C546B700EAB27F /* SYGLFilter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SYGLFilter.h; sourceTree = "<group>"; };
+		2C7EC58D20C546B700EAB27F /* SYGLFilter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SYGLFilter.m; sourceTree = "<group>"; };
+		2C90CEF720A5F3EE008AD04C /* SYGLKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SYGLKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C90CEFA20A5F3EE008AD04C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		2C90CEFB20A5F3EE008AD04C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		2C90CEFD20A5F3EE008AD04C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		2C90CEFE20A5F3EE008AD04C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		2C90CF0120A5F3EE008AD04C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2C90CF0320A5F3EF008AD04C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2C90CF0620A5F3EF008AD04C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2C90CF0820A5F3EF008AD04C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2C90CF0920A5F3EF008AD04C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2C90CF1220A5F44C008AD04C /* SYGLProgram.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SYGLProgram.h; sourceTree = "<group>"; };
+		2C90CF1420A5F44C008AD04C /* SYGLProgram.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SYGLProgram.m; sourceTree = "<group>"; };
+		2C90CF1A20A5F5F8008AD04C /* SYGLKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SYGLKit.h; sourceTree = "<group>"; };
+		2C90CF1B20A5F733008AD04C /* SYGLContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SYGLContext.m; sourceTree = "<group>"; };
+		2C90CF1C20A5F733008AD04C /* SYGLContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SYGLContext.h; sourceTree = "<group>"; };
+		2CE07DFD20A81E7E00CAA188 /* SYGLTexture.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SYGLTexture.h; sourceTree = "<group>"; };
+		2CE07DFE20A81E7E00CAA188 /* SYGLTexture.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SYGLTexture.m; sourceTree = "<group>"; };
+		2CE07E0020A82AF100CAA188 /* SYGLFrameBuffer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SYGLFrameBuffer.h; sourceTree = "<group>"; };
+		2CE07E0120A82AF100CAA188 /* SYGLFrameBuffer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SYGLFrameBuffer.m; sourceTree = "<group>"; };
+		2CE77AB220CA63BE00EB2D4B /* backGroundImageSource.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = backGroundImageSource.jpg; sourceTree = "<group>"; };
+		2CE77AB520CA677000EB2D4B /* SYGLImage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SYGLImage.h; sourceTree = "<group>"; };
+		2CE77AB620CA677000EB2D4B /* SYGLImage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SYGLImage.m; sourceTree = "<group>"; };
+		2CE77ABD20CA6E1B00EB2D4B /* Default.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Default.fsh; sourceTree = "<group>"; };
+		2CE77ABE20CA6E1B00EB2D4B /* Default.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Default.vsh; sourceTree = "<group>"; };
+		2CE77AC120CAA5BF00EB2D4B /* SYGLVideoCamera.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SYGLVideoCamera.h; sourceTree = "<group>"; };
+		2CE77AC220CAA5BF00EB2D4B /* SYGLVideoCamera.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SYGLVideoCamera.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2C90CEF420A5F3EE008AD04C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2C282DF820CBB3AC002F233A /* CameraColorConvertShaders */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CameraColorConvertShaders;
+			sourceTree = "<group>";
+		};
+		2C77D4C220C928F10039ECDB /* Consumers */ = {
+			isa = PBXGroup;
+			children = (
+				2C77D4C320C9291D0039ECDB /* SYGLView.h */,
+				2C77D4C420C9291D0039ECDB /* SYGLView.m */,
+			);
+			path = Consumers;
+			sourceTree = "<group>";
+		};
+		2C7EC58B20C5469500EAB27F /* Filters */ = {
+			isa = PBXGroup;
+			children = (
+				2C7EC58C20C546B700EAB27F /* SYGLFilter.h */,
+				2C7EC58D20C546B700EAB27F /* SYGLFilter.m */,
+			);
+			path = Filters;
+			sourceTree = "<group>";
+		};
+		2C90CEEE20A5F3EE008AD04C = {
+			isa = PBXGroup;
+			children = (
+				2C90CEF920A5F3EE008AD04C /* SYGLKit */,
+				2C90CEF820A5F3EE008AD04C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2C90CEF820A5F3EE008AD04C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2C90CEF720A5F3EE008AD04C /* SYGLKit.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2C90CEF920A5F3EE008AD04C /* SYGLKit */ = {
+			isa = PBXGroup;
+			children = (
+				2CE77AB120CA608700EB2D4B /* Source */,
+				2C90CF1020A5F43B008AD04C /* SYGLKit */,
+				2C90CEFA20A5F3EE008AD04C /* AppDelegate.h */,
+				2C90CEFB20A5F3EE008AD04C /* AppDelegate.m */,
+				2C90CEFD20A5F3EE008AD04C /* ViewController.h */,
+				2C90CEFE20A5F3EE008AD04C /* ViewController.m */,
+				2C90CF0020A5F3EE008AD04C /* Main.storyboard */,
+				2C90CF0320A5F3EF008AD04C /* Assets.xcassets */,
+				2C90CF0520A5F3EF008AD04C /* LaunchScreen.storyboard */,
+				2C90CF0820A5F3EF008AD04C /* Info.plist */,
+				2C90CF0920A5F3EF008AD04C /* main.m */,
+			);
+			path = SYGLKit;
+			sourceTree = "<group>";
+		};
+		2C90CF1020A5F43B008AD04C /* SYGLKit */ = {
+			isa = PBXGroup;
+			children = (
+				2CE77AB820CA6D6F00EB2D4B /* shaders */,
+				2CE77AB420CA675800EB2D4B /* Producers */,
+				2C77D4C220C928F10039ECDB /* Consumers */,
+				2C7EC58B20C5469500EAB27F /* Filters */,
+				2C90CF1720A5F49C008AD04C /* BaseClasses */,
+				2C90CF1A20A5F5F8008AD04C /* SYGLKit.h */,
+			);
+			path = SYGLKit;
+			sourceTree = "<group>";
+		};
+		2C90CF1720A5F49C008AD04C /* BaseClasses */ = {
+			isa = PBXGroup;
+			children = (
+				2C90CF1C20A5F733008AD04C /* SYGLContext.h */,
+				2C90CF1B20A5F733008AD04C /* SYGLContext.m */,
+				2C29E86620C3968E00B2D0D7 /* SYGLConsumer.h */,
+				2C29E86720C399E900B2D0D7 /* SYGLProducer.h */,
+				2C29E86820C399E900B2D0D7 /* SYGLProducer.m */,
+				2C90CF1220A5F44C008AD04C /* SYGLProgram.h */,
+				2C90CF1420A5F44C008AD04C /* SYGLProgram.m */,
+				2CE07DFD20A81E7E00CAA188 /* SYGLTexture.h */,
+				2CE07DFE20A81E7E00CAA188 /* SYGLTexture.m */,
+				2CE07E0020A82AF100CAA188 /* SYGLFrameBuffer.h */,
+				2CE07E0120A82AF100CAA188 /* SYGLFrameBuffer.m */,
+			);
+			path = BaseClasses;
+			sourceTree = "<group>";
+		};
+		2CE77AB120CA608700EB2D4B /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				2CE77AB220CA63BE00EB2D4B /* backGroundImageSource.jpg */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		2CE77AB420CA675800EB2D4B /* Producers */ = {
+			isa = PBXGroup;
+			children = (
+				2CE77AB520CA677000EB2D4B /* SYGLImage.h */,
+				2CE77AB620CA677000EB2D4B /* SYGLImage.m */,
+				2CE77AC120CAA5BF00EB2D4B /* SYGLVideoCamera.h */,
+				2CE77AC220CAA5BF00EB2D4B /* SYGLVideoCamera.m */,
+			);
+			path = Producers;
+			sourceTree = "<group>";
+		};
+		2CE77AB820CA6D6F00EB2D4B /* shaders */ = {
+			isa = PBXGroup;
+			children = (
+				2C282DF820CBB3AC002F233A /* CameraColorConvertShaders */,
+				2CE77ABD20CA6E1B00EB2D4B /* Default.fsh */,
+				2CE77ABE20CA6E1B00EB2D4B /* Default.vsh */,
+			);
+			path = shaders;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2C90CEF620A5F3EE008AD04C /* SYGLKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2C90CF0D20A5F3EF008AD04C /* Build configuration list for PBXNativeTarget "SYGLKit" */;
+			buildPhases = (
+				2C90CEF320A5F3EE008AD04C /* Sources */,
+				2C90CEF420A5F3EE008AD04C /* Frameworks */,
+				2C90CEF520A5F3EE008AD04C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SYGLKit;
+			productName = SYGLKit;
+			productReference = 2C90CEF720A5F3EE008AD04C /* SYGLKit.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2C90CEEF20A5F3EE008AD04C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = Sylar;
+				TargetAttributes = {
+					2C90CEF620A5F3EE008AD04C = {
+						CreatedOnToolsVersion = 9.3;
+					};
+				};
+			};
+			buildConfigurationList = 2C90CEF220A5F3EE008AD04C /* Build configuration list for PBXProject "SYGLKit" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2C90CEEE20A5F3EE008AD04C;
+			productRefGroup = 2C90CEF820A5F3EE008AD04C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2C90CEF620A5F3EE008AD04C /* SYGLKit */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2C90CEF520A5F3EE008AD04C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C90CF0720A5F3EF008AD04C /* LaunchScreen.storyboard in Resources */,
+				2CE77AC020CA6E1B00EB2D4B /* Default.vsh in Resources */,
+				2C90CF0420A5F3EF008AD04C /* Assets.xcassets in Resources */,
+				2C90CF0220A5F3EE008AD04C /* Main.storyboard in Resources */,
+				2CE77ABF20CA6E1B00EB2D4B /* Default.fsh in Resources */,
+				2CE77AB320CA63BE00EB2D4B /* backGroundImageSource.jpg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2C90CEF320A5F3EE008AD04C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C90CF1D20A5F733008AD04C /* SYGLContext.m in Sources */,
+				2C77D4C520C9291D0039ECDB /* SYGLView.m in Sources */,
+				2C90CF1620A5F44C008AD04C /* SYGLProgram.m in Sources */,
+				2CE77AC320CAA5BF00EB2D4B /* SYGLVideoCamera.m in Sources */,
+				2CE07DFF20A81E7E00CAA188 /* SYGLTexture.m in Sources */,
+				2CE77AB720CA677000EB2D4B /* SYGLImage.m in Sources */,
+				2CE07E0220A82AF100CAA188 /* SYGLFrameBuffer.m in Sources */,
+				2C29E86920C399E900B2D0D7 /* SYGLProducer.m in Sources */,
+				2C90CEFF20A5F3EE008AD04C /* ViewController.m in Sources */,
+				2C90CF0A20A5F3EF008AD04C /* main.m in Sources */,
+				2C7EC58E20C546B700EAB27F /* SYGLFilter.m in Sources */,
+				2C90CEFC20A5F3EE008AD04C /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		2C90CF0020A5F3EE008AD04C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2C90CF0120A5F3EE008AD04C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2C90CF0520A5F3EF008AD04C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2C90CF0620A5F3EF008AD04C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2C90CF0B20A5F3EF008AD04C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		2C90CF0C20A5F3EF008AD04C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2C90CF0E20A5F3EF008AD04C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G583SJY324;
+				INFOPLIST_FILE = SYGLKit/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Sylar.SYGLKit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2C90CF0F20A5F3EF008AD04C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G583SJY324;
+				INFOPLIST_FILE = SYGLKit/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Sylar.SYGLKit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2C90CEF220A5F3EE008AD04C /* Build configuration list for PBXProject "SYGLKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2C90CF0B20A5F3EF008AD04C /* Debug */,
+				2C90CF0C20A5F3EF008AD04C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2C90CF0D20A5F3EF008AD04C /* Build configuration list for PBXNativeTarget "SYGLKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2C90CF0E20A5F3EF008AD04C /* Debug */,
+				2C90CF0F20A5F3EF008AD04C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2C90CEEF20A5F3EE008AD04C /* Project object */;
+}
