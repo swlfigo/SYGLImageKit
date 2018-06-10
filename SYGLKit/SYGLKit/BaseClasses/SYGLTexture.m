@@ -73,7 +73,7 @@
         
         
 #if defined(__IPHONE_6_0)
-        CVReturn error = CVOpenGLESTextureCacheCreate(kCFAllocatorDefault, NULL, [EAGLContext currentContext], NULL, &textureCacheRef_);
+        CVReturn error = CVOpenGLESTextureCacheCreate(kCFAllocatorDefault, NULL, [SYGLContext defaultContext].context, NULL, &textureCacheRef_);
 #else
         CVReturn error = CVOpenGLESTextureCacheCreate(kCFAllocatorDefault, NULL, (__bridge void *)[EAGLContext currentContext], NULL, &textureCacheRef);
 #endif

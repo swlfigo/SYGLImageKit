@@ -13,6 +13,8 @@
 
 @property (retain, nonatomic) UIImage *sourceImage;
 @property (readonly, nonatomic) UIImage *processedImage;
+@property (readonly, nonatomic) CGSize size;
+
 // Initialization Methods
 
 - (instancetype)initWithUIImage:(UIImage *)image NS_DESIGNATED_INITIALIZER;

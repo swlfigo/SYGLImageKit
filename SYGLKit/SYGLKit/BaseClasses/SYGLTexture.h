@@ -61,6 +61,8 @@ typedef struct GPUTextureOptions {
 - (void)attachToCurrentFrameBufferObject;
 - (void)bindToTextureIndex:(GLenum)textureIndex;
 
+- (void)deleteTextureBuffer;
+
 - (UIImage *)imageFromContentBuffer;
 
 

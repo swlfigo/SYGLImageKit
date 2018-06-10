@@ -30,6 +30,8 @@
         processedImage_ = nil;
         self.sourceImage = image;
         outputFrame_ = CGRectMake(0, 0, outputTexture_.size.width, outputTexture_.size.height);
+        _size = CGSizeMake(outputTexture_.size.width, outputTexture_.size.height);
+        
     }
     return self;
 }
@@ -40,6 +42,7 @@
 - (void)setSourceImage:(UIImage *)sourceImage
 {
     if (sourceImage_ != sourceImage) {
+        [outputTexture_ deleteTextureBuffer];
         sourceImage_ = sourceImage;
         if (processedImage_) {
             processedImage_ = nil;
