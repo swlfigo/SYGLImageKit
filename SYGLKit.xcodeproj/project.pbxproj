@@ -7,7 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2C1E3A8E20CE695D009BDBC3 /* SYGLBlendFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C1E3A8D20CE695D009BDBC3 /* SYGLBlendFilter.m */; };
 		2C29E86920C399E900B2D0D7 /* SYGLProducer.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C29E86820C399E900B2D0D7 /* SYGLProducer.m */; };
+		2C62E14E20CD178A0032164D /* SYGLTwoInputsFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C62E14D20CD178A0032164D /* SYGLTwoInputsFilter.m */; };
+		2C62E15020CD18780032164D /* TwoInputs.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 2C62E14F20CD18780032164D /* TwoInputs.vsh */; };
+		2C62E15220CD1ACF0032164D /* Blend.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 2C62E15120CD1ACF0032164D /* Blend.fsh */; };
+		2C62E15420CD20140032164D /* smallSizeImageSource.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2C62E15320CD20140032164D /* smallSizeImageSource.jpg */; };
 		2C77D4C520C9291D0039ECDB /* SYGLView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C77D4C420C9291D0039ECDB /* SYGLView.m */; };
 		2C7EC58E20C546B700EAB27F /* SYGLFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C7EC58D20C546B700EAB27F /* SYGLFilter.m */; };
 		2C90CEFC20A5F3EE008AD04C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C90CEFB20A5F3EE008AD04C /* AppDelegate.m */; };
@@ -28,9 +33,16 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2C1E3A8C20CE695D009BDBC3 /* SYGLBlendFilter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SYGLBlendFilter.h; sourceTree = "<group>"; };
+		2C1E3A8D20CE695D009BDBC3 /* SYGLBlendFilter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SYGLBlendFilter.m; sourceTree = "<group>"; };
 		2C29E86620C3968E00B2D0D7 /* SYGLConsumer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SYGLConsumer.h; sourceTree = "<group>"; };
 		2C29E86720C399E900B2D0D7 /* SYGLProducer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SYGLProducer.h; sourceTree = "<group>"; };
 		2C29E86820C399E900B2D0D7 /* SYGLProducer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SYGLProducer.m; sourceTree = "<group>"; };
+		2C62E14C20CD178A0032164D /* SYGLTwoInputsFilter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SYGLTwoInputsFilter.h; sourceTree = "<group>"; };
+		2C62E14D20CD178A0032164D /* SYGLTwoInputsFilter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SYGLTwoInputsFilter.m; sourceTree = "<group>"; };
+		2C62E14F20CD18780032164D /* TwoInputs.vsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = TwoInputs.vsh; sourceTree = "<group>"; };
+		2C62E15120CD1ACF0032164D /* Blend.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Blend.fsh; sourceTree = "<group>"; };
+		2C62E15320CD20140032164D /* smallSizeImageSource.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = smallSizeImageSource.jpg; sourceTree = "<group>"; };
 		2C77D4C320C9291D0039ECDB /* SYGLView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SYGLView.h; sourceTree = "<group>"; };
 		2C77D4C420C9291D0039ECDB /* SYGLView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SYGLView.m; sourceTree = "<group>"; };
 		2C7EC58C20C546B700EAB27F /* SYGLFilter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SYGLFilter.h; sourceTree = "<group>"; };
@@ -95,6 +107,10 @@
 			children = (
 				2C7EC58C20C546B700EAB27F /* SYGLFilter.h */,
 				2C7EC58D20C546B700EAB27F /* SYGLFilter.m */,
+				2C62E14C20CD178A0032164D /* SYGLTwoInputsFilter.h */,
+				2C62E14D20CD178A0032164D /* SYGLTwoInputsFilter.m */,
+				2C1E3A8C20CE695D009BDBC3 /* SYGLBlendFilter.h */,
+				2C1E3A8D20CE695D009BDBC3 /* SYGLBlendFilter.m */,
 			);
 			path = Filters;
 			sourceTree = "<group>";
@@ -168,6 +184,7 @@
 			isa = PBXGroup;
 			children = (
 				2CE77AB220CA63BE00EB2D4B /* backGroundImageSource.jpg */,
+				2C62E15320CD20140032164D /* smallSizeImageSource.jpg */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -189,6 +206,8 @@
 				2C282DF820CBB3AC002F233A /* CameraColorConvertShaders */,
 				2CE77ABD20CA6E1B00EB2D4B /* Default.fsh */,
 				2CE77ABE20CA6E1B00EB2D4B /* Default.vsh */,
+				2C62E14F20CD18780032164D /* TwoInputs.vsh */,
+				2C62E15120CD1ACF0032164D /* Blend.fsh */,
 			);
 			path = shaders;
 			sourceTree = "<group>";
@@ -250,9 +269,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C62E15020CD18780032164D /* TwoInputs.vsh in Resources */,
+				2C62E15220CD1ACF0032164D /* Blend.fsh in Resources */,
 				2C90CF0720A5F3EF008AD04C /* LaunchScreen.storyboard in Resources */,
 				2CE77AC020CA6E1B00EB2D4B /* Default.vsh in Resources */,
 				2C90CF0420A5F3EF008AD04C /* Assets.xcassets in Resources */,
+				2C62E15420CD20140032164D /* smallSizeImageSource.jpg in Resources */,
 				2C90CF0220A5F3EE008AD04C /* Main.storyboard in Resources */,
 				2CE77ABF20CA6E1B00EB2D4B /* Default.fsh in Resources */,
 				2CE77AB320CA63BE00EB2D4B /* backGroundImageSource.jpg in Resources */,
@@ -275,8 +297,10 @@
 				2CE07E0220A82AF100CAA188 /* SYGLFrameBuffer.m in Sources */,
 				2C29E86920C399E900B2D0D7 /* SYGLProducer.m in Sources */,
 				2C90CEFF20A5F3EE008AD04C /* ViewController.m in Sources */,
+				2C62E14E20CD178A0032164D /* SYGLTwoInputsFilter.m in Sources */,
 				2C90CF0A20A5F3EF008AD04C /* main.m in Sources */,
 				2C7EC58E20C546B700EAB27F /* SYGLFilter.m in Sources */,
+				2C1E3A8E20CE695D009BDBC3 /* SYGLBlendFilter.m in Sources */,
 				2C90CEFC20A5F3EE008AD04C /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
