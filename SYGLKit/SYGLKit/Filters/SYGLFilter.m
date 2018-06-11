@@ -17,6 +17,12 @@
 @synthesize contentSize = contentSize_;
 @synthesize contentMode;
 
+-(void)dealloc{
+    [SYGLContext performSynchronouslyOnImageProcessingQueue:^{
+        outputTexture_ = nil;
+    }];
+}
+
 - (instancetype)init
 {
     self = [super init];
@@ -53,6 +59,16 @@
         inputTexture_ = nil;
         inputTexture_ = texture;
     }
+}
+
+-(UIImage *)imageFromCurrentFrame{
+    if ([consumers_ count]) {
+        id <SYGLConsumer> consumer = [consumers_ lastObject];
+        if ([consumer respondsToSelector:@selector(imageFromCurrentFrame)]) {
+            return [consumer imageFromCurrentFrame];
+        }
+    }
+    return [outputTexture_ imageFromContentBuffer];
 }
 
 - (void)renderRect:(CGRect)rect atTime:(CMTime)time
