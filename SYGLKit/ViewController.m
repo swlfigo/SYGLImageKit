@@ -134,9 +134,9 @@
     //presetPhoto质量全屏幕显示
 //    [_camera addConsumer:_firstEmptyFilter];
 //
-//    _firstEmptyFilter.contentSize = CGSizeMake(1080, 1440);
+//    _firstEmptyFilter.contentSize = CGSizeMake(_camera.outputFrame.size.width, _camera.outputFrame.size.height);
 //
-//    CGFloat x = (1440 * 3 / 4.0  - 1080)/2.0;
+//    CGFloat x = (_camera.outputFrame.size.height * 3 / 4.0  - _camera.outputFrame.size.width)/2.0;
 //
 //    _firstEmptyFilter.outputFrame = CGRectMake(x, 0,_presentView.contentSize.height * 3 /4.0, _presentView.contentSize.height);
 //
@@ -149,9 +149,9 @@
 
     [_camera addConsumer:_secondEmptyFilter];
     
-    _secondEmptyFilter.contentSize = CGSizeMake(1080, 1440);
+    _secondEmptyFilter.contentSize = CGSizeMake(_camera.outputFrame.size.width, _camera.outputFrame.size.height);
     
-    CGFloat x = (1440 * 3 / 4.0  - 1080)/2.0;
+    CGFloat x = (_camera.outputFrame.size.height * 3 / 4.0  - _camera.outputFrame.size.width)/2.0;
     
     _secondEmptyFilter.outputFrame = CGRectMake(x, 0,_presentView.contentSize.height * 3 /4.0, _presentView.contentSize.height);
     
