@@ -9,12 +9,14 @@
 #ifndef SYGLKit_h
 #define SYGLKit_h
 
+#import "SYGLBlendFilter.h"
 #import "SYGLContext.h"
 #import "SYGLConsumer.h"
 #import "SYGLFrameBuffer.h"
 #import "SYGLProgram.h"
 #import "SYGLProducer.h"
 #import "SYGLTexture.h"
+#import "SYGLTwoInputsFilter.h"
 
 
 #endif /* SYGLKit_h */
