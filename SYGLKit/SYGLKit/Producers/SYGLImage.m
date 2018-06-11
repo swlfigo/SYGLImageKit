@@ -42,7 +42,6 @@
 - (void)setSourceImage:(UIImage *)sourceImage
 {
     if (sourceImage_ != sourceImage) {
-        [outputTexture_ deleteTextureBuffer];
         sourceImage_ = sourceImage;
         if (processedImage_) {
             processedImage_ = nil;
@@ -61,6 +60,7 @@
     if (!processedImage_) {
         
         [SYGLContext performSynchronouslyOnImageProcessingQueue:^{
+            [SYGLContext useImageProcessingContext];
             [self produceAtTime:kCMTimeInvalid];
             id <SYGLConsumer> consumer = [consumers_ objectAtIndex:0];
             if ([consumer respondsToSelector:@selector(imageFromCurrentFrame)]) {
@@ -77,6 +77,7 @@
     if (sourceImage_) {
        
         [SYGLContext performSynchronouslyOnImageProcessingQueue:^{
+            [SYGLContext useImageProcessingContext];
             if (outputTexture_) {
                 outputTexture_ = nil;
             }
@@ -88,6 +89,7 @@
     else {
         
         [SYGLContext performSynchronouslyOnImageProcessingQueue:^{
+            [SYGLContext useImageProcessingContext];
             if (outputTexture_) {
                 outputTexture_ = nil;
             }
@@ -141,6 +143,21 @@
 }
 
 
+-(void)produceAtTime:(CMTime)time{
+    if (!self.isEnabled) {
+        return;
+    }
 
+    if (outputTexture_ && [consumers_ count]) {
+        for (id <SYGLConsumer> consumer in consumers_) {
+
+            [SYGLContext performSynchronouslyOnImageProcessingQueue:^{
+                [SYGLContext useImageProcessingContext];
+                [consumer setInputTexture:outputTexture_];
+                [consumer renderRect:outputFrame_ atTime:time];
+            }];
+        }
+    }
+}
 
 @end
