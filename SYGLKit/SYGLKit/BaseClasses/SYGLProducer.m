@@ -78,6 +78,7 @@
     if (outputTexture_ && [consumers_ count]) {
         for (id <SYGLConsumer> consumer in consumers_) {
             [SYGLContext performSynchronouslyOnImageProcessingQueue:^{
+                [SYGLContext useImageProcessingContext];
                 [consumer setInputTexture:outputTexture_];
                 [consumer renderRect:self.outputFrame atTime:time];
             }];

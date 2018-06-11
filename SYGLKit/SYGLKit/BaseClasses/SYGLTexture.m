@@ -534,6 +534,8 @@ void dataProviderUnlockCallback (void *info, const void *data, size_t size)
     return resizedBuffer;
 }
 
-
+-(NSString *)description{
+    return [NSString stringWithFormat:@"Texture Size :%@ ",NSStringFromCGSize(self.size)];
+}
 
 @end
